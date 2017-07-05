@@ -1,7 +1,7 @@
 module Multigraphs
 
 export
-  MultiGraph,
+  Multigraph,
   mEdge,
   mVertex,
   add_vertex!,
