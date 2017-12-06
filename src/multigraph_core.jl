@@ -1,9 +1,9 @@
-type mVertex
+struct mVertex
     index::Int64
     value::Any    # will be of type string
 end
 
-type mEdge
+struct mEdge
     index::Int64
     v1::mVertex
     v2::mVertex
@@ -14,7 +14,7 @@ end
 # as well as attributes. 
 # Also define an out_edges adjacency list
 # and an in_edges adjacency list """    
-type Multigraph
+struct Multigraph
     vertices::Dict{Int64,mVertex}
     edges::Dict{Int64,mEdge}
     out_edges::Dict{Int64,Array{Int64}}
