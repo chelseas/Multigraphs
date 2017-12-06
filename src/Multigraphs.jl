@@ -6,6 +6,7 @@ export
   mVertex,
   add_vertex!,
   add_edge!,
+  remove_edge!,
   in_degree,
   out_degree
   
