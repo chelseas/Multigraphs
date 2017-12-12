@@ -49,8 +49,8 @@ end
 
 function remove_edge!(g::Multigraphs.Multigraph, edge::Multigraphs.mEdge)
     delete!(g.edges, edge.index)
-    filter!(x->x!=edge.index, g.out_edges[edge.v1])
-    filter!(x->x!=edge.index, g.in_edges[edge.v2])
+    filter!(x->x!=edge.index, g.out_edges[edge.v1.index])
+    filter!(x->x!=edge.index, g.in_edges[edge.v2.index])
     return g
 end
 
